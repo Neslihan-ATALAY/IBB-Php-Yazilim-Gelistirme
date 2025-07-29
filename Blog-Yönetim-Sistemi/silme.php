@@ -7,7 +7,7 @@ if ($baglanti->connect_error) {
 $sql = "DELETE FROM yazilar WHERE id=".$_REQUEST['ID']."";
 $sonuc = $baglanti->query($sql);
 if ($sonuc === true) {
-	echo "Successfull (Yazı veritabanından başarılı silindi.)";
+    echo "Successfull (Yazı veritabanından başarılı silindi.)";
     echo "<br><br><a href='index.php'>HOMEPAGE (ANASAYFA)</a>";
 } else {
     echo "Unsuccessfull (İlgili yazı veritabanından silinemedi! Lütfen tekrar deneyiniz.)";
