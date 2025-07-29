@@ -25,7 +25,7 @@ if ($sonuc->num_rows > 0) {
 		</form>';
 	}
 } else {
-	echo "No record! (İlgili yazı veritabanında bulunamadı! Lütfen tekrar deneyiniz.)";
+    echo "No record! (İlgili yazı veritabanında bulunamadı! Lütfen tekrar deneyiniz.)";
     echo "<br><br><a href='index.php'>HOMEPAGE (ANASAYFA)</a>";
 }
 $baglanti->close();
