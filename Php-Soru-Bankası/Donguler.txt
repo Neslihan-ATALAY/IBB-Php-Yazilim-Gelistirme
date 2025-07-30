@@ -1,4 +1,4 @@
-Soru 1)1'den 10'a kadar olan sayıları alt alta yazdıran bir for döngüsü yazınız.
+Soru 1) 1'den 10'a kadar olan sayıları alt alta yazdıran bir for döngüsü yazınız.
 
 Çözüm 1)
 <?php
@@ -16,7 +16,7 @@ echo "1'den 100'e kadar olan çift sayıların toplamı: ";
 $toplam = 0;
 $i = 1;
 while ($i <= 100) {
-    if ($i % 2) {
+    if ($i % 2 == 0) {
         $toplam += $i;
     }
     $i++;
@@ -24,6 +24,25 @@ while ($i <= 100) {
 echo $toplam;
 ?>
 
-Soru 3)
+Soru 3) Aşağıdaki çıktıyı üreten for döngüsünü yazınız.
+1 - Tek
+2 - Çift
+3 - Tek
+.
+10 - Çift
 
 Çözüm 3)
+<?php
+echo "1'den 10'a kadar tek ve çift sayılar:\n";
+for ($i = 1; $i <= 10; $i++) {
+    if ($i % 2 == 0) {
+        echo $i." - Çift\n";
+    } else {
+        echo $i." - Tek\n";
+    }
+}
+?>
+
+Soru 4) 1'den başlayıp kullanıcıdan alınan bir sayıya kadar olan tüm sayıların çarpımını hesaplayan bir do-while döngüsü yazınız.
+
+Çözüm 4)
