@@ -112,8 +112,36 @@ for ($i = 1; $i <= 5; $i++) {
 }
 ?>
 
+Soru 9) 1'den 10'a kadar olan sayıları ters sırada yazdıran bir for döngüsü yazınız.
 
+Çözüm 9)
+<?php
+echo "1'den 10'a kadar olan sayıların ters sırada yazılması:\n";
+for ($i = 10; $i > 0; $i--) {
+    echo "$i\n";
+}
+?>
 
+Soru 10) Belirli bir aralıktaki asal sayıları bulan bir döngü örneği yazınız.
+
+Çözüm 10)
+<?php
+echo "2 ile 50 sayıları arasındaki asal sayılar:\n";
+for ($i = 2; $i <= 50; $i++) {
+    $asal = true;
+    $j = 2;
+    do {
+        if ($i != 2 & $i % $j == 0) {
+            $asal = false;
+            break;
+        }
+        $j++;
+    } while ($j < $i);
+    if ($asal == true) {
+        echo "$i\n";
+    }
+}
+?>
 
 
 
