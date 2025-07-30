@@ -79,3 +79,26 @@ switch ($gun_sayi) {
 }
 echo $gun;
 ?>
+
+Soru 5)
+
+Çözüm 5)
+<?php
+$a = "10";
+if ($a == 10) {
+    echo "(\"10\"==10) ifadesi doğru";
+} else {
+    echo "(\"10\"==10) ifadesi doğru değil";
+}
+?>
+Çıktı olarak if koşulunun içindeki "("10"==10) ifadesi doğru" ifadesi yazacaktır. Çünkü == operatörü değişkenlerin değerlerinin aynı olup olmadığını bulmaktadır.
+<?php
+$a = "10";
+if ($a === 10) {
+    echo "(\"10\"===10) ifadesi doğru";
+} else {
+    echo "(\"10\"===10) ifadesi doğru değil";
+}
+?>
+Çıktı olarak else koşulunun içindeki "("10"===10) ifadesi doğru değil" ifadesi yazacaktır. Çünkü === operatörü değişkenlerin değerlerinin ve tiplerinin her ikisinin de aynı olup olmadığını bulmaktadır. $a değişkeni string tipinde iken if koşulunda integer tipi ile karşılaştırılmıştır. Değişkenlerin değerleri 10 olsa da tipleri farklıdır ve koşullu ifade de else koşulu çıktı olacaktır.
+
