@@ -51,3 +51,31 @@ if ($not >= 90) {
 Soru 4) switch-case kullanarak kullanıcıdan alınan sayının haftanın hangi günü olduğunu gösteren bir örnek yazınız.
 
 Çözüm 4)
+<?php
+$gun_sayi = readline("Lütfen gün sayısını giriniz (1-7 sayıları arasında): ");
+$gun = $gun_sayi.". gün: ";
+switch ($gun_sayi) {
+    case 1:
+        $gun = $gun."Pazartesi";
+        break;
+    case 2:
+        $gun = $gun."Salı";
+        break;
+    case 3:
+        $gun = $gun."Çarşamba";
+        break;
+    case 4:
+        $gun = $gun."Perşembe";
+        break;
+    case 5:
+        $gun = $gun."Cuma";
+        break;
+    case 6:
+        $gun = $gun."Cumartesi";
+        break;
+    case 7:
+        $gun = $gun."Pazar";
+        break;
+}
+echo $gun;
+?>
