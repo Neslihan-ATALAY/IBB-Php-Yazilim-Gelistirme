@@ -46,3 +46,44 @@ for ($i = 1; $i <= 10; $i++) {
 Soru 4) 1'den başlayıp kullanıcıdan alınan bir sayıya kadar olan tüm sayıların çarpımını hesaplayan bir do-while döngüsü yazınız.
 
 Çözüm 4)
+<?php
+$sayi = readline("Lütfen bir sayı yazınız: ");
+$carpim = 1;
+$i = 1;
+do {
+    $carpim *= $i;
+    $i++;
+} while ($i <= $sayi);
+echo "1'den $sayi sayısına kadar olan sayıların çarpımı ($sayi!, faktöriyel $sayi): $carpim";
+?>
+
+Soru 5) Bir dizideki elemanları foreach döngüsü ile ekrana yazdırınız.
+$dizi = ["elma", "muz", "karpuz"];
+
+Çözüm 5)
+<?php
+$dizi = ["elma", "muz", "karpuz"];
+print "Dizi Elemanları:\n";
+foreach ($dizi as $eleman)
+    print "$eleman\n";
+?>
+
+Soru 6) break komutunu kullanarak 1'den 10'a kadar yazan ama 5'e gelince duran bir for döngüsü yazınız.
+
+Çözüm 6)
+<?php
+echo "Break komutu kullanımı:\n";
+for ($i = 0; $i < 10; $i++) {
+    if (($i+1) == 5) {
+        break;
+    }
+    echo ($i+1)."\n";
+}
+?>
+
+Soru 7) continue komutunu kullanarak, 1'den 10'a kadar olan sayılardan tek olanları yazdıran bir for döngüsü yazınız.
+
+Çözüm 7)
+
+
+
