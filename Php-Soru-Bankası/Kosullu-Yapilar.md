@@ -8,5 +8,6 @@ if ($a == "10") {
 }
 ?>
 Çözüm 1) Eşit
-////////////////////////
-Soru 2) 
+
+Soru 2) if yerine ternary operatör kullanarak aşağıdaki kodu tekrar yazınız.
+
