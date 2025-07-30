@@ -1,0 +1,10 @@
+Soru 1)1'den 10'a kadar olan sayıları alt alta yazdıran bir for döngüsü yazınız.
+
+Çözüm 1)
+<?php
+echo "1'den 10'a kadar olan sayılar alt alta:\n";
+for ($i=1; $i<=10; $i++)
+    echo $i."\n";
+?>
+
+Soru 2)
