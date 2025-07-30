@@ -102,3 +102,10 @@ if ($a === 10) {
 ?>
 Çıktı olarak else koşulunun içindeki "("10"===10) ifadesi doğru değil" ifadesi yazacaktır. Çünkü === operatörü değişkenlerin değerlerinin ve tiplerinin her ikisinin de aynı olup olmadığını bulmaktadır. $a değişkeni string tipinde iken if koşulunda integer tipi ile karşılaştırılmıştır. Değişkenlerin değerleri 10 olsa da tipleri farklıdır ve koşullu ifade de else koşulu çıktı olacaktır.
 
+Soru 6) Ternary operatörleri iç içe kullanarak, bir ögrencinin ortalaması 50'den büyükse geçti, değilse kaldı yazan kodu yazınız.
+
+Çözüm 6)
+<?php
+$ogrenci_not_ortalamasi = readline("Lütfen ögrencinin notunu yazınız: ");
+echo $ogrenci_not_ortalamasi >=50 ? "Geçti" : "Kaldı";
+?>
