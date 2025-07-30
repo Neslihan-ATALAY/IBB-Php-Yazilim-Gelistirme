@@ -7,4 +7,23 @@ for ($i=1; $i<=10; $i++)
     echo $i."\n";
 ?>
 
-Soru 2)
+Soru 2) 1'den 100'e kadar olan çift sayıların toplamını hesaplayan bir while döngüsü yazınız.
+
+Çözüm 2)
+
+<?php
+echo "1'den 100'e kadar olan çift sayıların toplamı: ";
+$toplam = 0;
+$i = 1;
+while ($i <= 100) {
+    if ($i % 2) {
+        $toplam += $i;
+    }
+    $i++;
+}
+echo $toplam;
+?>
+
+Soru 3)
+
+Çözüm 3)
