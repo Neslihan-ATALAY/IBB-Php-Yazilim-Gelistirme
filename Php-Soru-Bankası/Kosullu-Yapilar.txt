@@ -33,26 +33,21 @@ Soru 3) Kullanıcının notunu alıp harf notuna çeviren bir program yazınız.
 Altı: F
 Çözüm 3)
 <?php
-$not = 77;
+$not = readline("Lütfen notunuzu sayı olarak yaziniz: ");
 echo $not." notunuzun harf notu: ";
-switch ($not) {
-    case $not >= 90:
-        echo "A";
-        break;
-    case $not >= 80:
-        echo "B";
-        break;
-    case $not >= 70:
+if ($not >= 90) {
+    echo "A";
+} else if ($not >= 80) {
+    echo "B";
+} else if ($not >= 70) {
         echo "C";
-        break;
-    case $not >= 60:
-        echo "D";
-        break;
-    case $not < 60:
-        echo "F";
-        break;
+} else if ($not >= 60) {
+    echo "D";
+} else if ($not < 60) {
+    echo "F";
 }
 ?>
 
-Soru 4)
-}
+Soru 4) switch-case kullanarak kullanıcıdan alınan sayının haftanın hangi günü olduğunu gösteren bir örnek yazınız.
+
+Çözüm 4)
