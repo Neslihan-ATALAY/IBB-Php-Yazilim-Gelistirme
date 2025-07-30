@@ -107,5 +107,12 @@ Soru 6) Ternary operatörleri iç içe kullanarak, bir ögrencinin ortalaması 5
 Çözüm 6)
 <?php
 $ogrenci_not_ortalamasi = readline("Lütfen ögrencinin notunu yazınız: ");
+echo "\nÖgrencinin harf notu: ";
 echo $ogrenci_not_ortalamasi >=50 ? "Geçti" : "Kaldı";
+?>
+
+<?php
+$ogrenci_not_ortalamasi = readline("Lütfen ögrencinin not ortalamasını yazınız: ");
+echo "\nÖgrencinin harf notu: ";
+echo $ogrenci_not_ortalamasi >= 90 ? "A" : ($ogrenci_not_ortalamasi >= 80 ? "B" : ($ogrenci_not_ortalamasi >= 70 ? "C" : ($ogrenci_not_ortalamasi >= 60 ? "D" : "F")));
 ?>
