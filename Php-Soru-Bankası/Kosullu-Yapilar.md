@@ -32,5 +32,28 @@ Soru 3) Kullanıcının notunu alıp harf notuna çeviren bir program yazınız.
 60-69: D
 Altı: F
 Çözüm 3)
+<?php
+$not = 77;
+echo $not." notunuzun harf notu: ";
+switch ($not) {
+    case $not >= 90:
+        echo "A";
+        break;
+    case $not >= 80:
+        echo "B";
+        break;
+    case $not >= 70:
+        echo "C";
+        break;
+    case $not >= 60:
+        echo "D";
+        break;
+    case $not < 60:
+        echo "F";
+        break;
+}
+?>
+
+Soru 4)
 
 
