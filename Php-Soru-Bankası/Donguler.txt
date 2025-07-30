@@ -84,6 +84,36 @@ for ($i = 0; $i < 10; $i++) {
 Soru 7) continue komutunu kullanarak, 1'den 10'a kadar olan sayılardan tek olanları yazdıran bir for döngüsü yazınız.
 
 Çözüm 7)
+<?php
+echo "Continue komutu kullanımı:\n";
+for ($i = 0; $i < 10; $i++) {
+    if (($i+1)%2 == 0) {
+        continue;
+    }
+    echo ($i+1)."\n";
+}
+?>
+
+Soru 8) Aşağıdaki çıktıyı üreten iç içe geçmiş iki for döngüsü yazınız.
+1
+22
+333
+4444
+55555
+
+Çözüm 8)
+<?php
+echo "İç içe iki for döngüsü:\n";
+for ($i = 1; $i <= 5; $i++) {
+    for ($j = 1; $j <= $i; $j++) {
+        echo $i;
+    }
+    echo "\n";
+}
+?>
+
+
+
 
 
 
