@@ -7,6 +7,7 @@ if ($a == "10") {
     echo "Değil";
 }
 ?>
+
 Çözüm 1) Eşit
 
 Soru 2) if yerine ternary operatör kullanarak aşağıdaki kodu tekrar yazınız.
@@ -18,6 +19,7 @@ if ($yas >= 18) {
     echo "Oy kullanamaz";
 }
 ?>
+
 Çözüm 2)
 <?php
 $yas = 18;
@@ -31,6 +33,7 @@ Soru 3) Kullanıcının notunu alıp harf notuna çeviren bir program yazınız.
 70-79: C
 60-69: D
 Altı: F
+
 Çözüm 3)
 <?php
 $not = readline("Lütfen notunuzu sayı olarak yaziniz: ");
