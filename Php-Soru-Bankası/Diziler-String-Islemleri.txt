@@ -55,4 +55,21 @@ else
     echo "$isim ismi dizide yok.\n";
 ?>
 
-Soru 5)
+Soru 5) array_key_exist() ile bir anahtarın dizide olup olmadığını kontrol eden örnek yazınız.
+
+Çözüm 5)
+<?php
+$isimler = [1 => "Neslihan", 2 => "Neslişah", 3 => "Neslinur", 4 => "Neslican", 5 => "Nesligül"];
+$anahtar = readline("İsimler dizisinde aradığınız sayı anahtar nedir? ");
+echo "Dizide anahtar=$anahtar ve değeri nedir?\n";
+if (array_key_exists($anahtar, $isimler))
+    echo "$anahtar => $isimler[$anahtar]\n";
+else
+    echo "Dizide anahtar=$anahtar yok.\n";
+?>
+
+Soru 6) Bir stringi karekter karakter bölen ve her karakteri alt alta yazdıran bir foreach döngüsü yazınız.
+
+Çözüm 6)
+
+
