@@ -108,5 +108,8 @@ Soru 9) strlen() ve strpos() fonksiyonlarını kullanarak bir cümlenin ilk boş
 
 Çözüm 9)
 
+Soru 10) Bir metindeki sesli harfleri sayan bir döngü yazınız.
+
+Çözüm 10)
 
 
