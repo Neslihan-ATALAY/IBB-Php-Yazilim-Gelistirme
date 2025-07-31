@@ -71,5 +71,15 @@ else
 Soru 6) Bir stringi karekter karakter bölen ve her karakteri alt alta yazdıran bir foreach döngüsü yazınız.
 
 Çözüm 6)
+<?php
+$string = "karakter";
+$char_dizi = str_split($string);
+echo "$string\n";
+foreach ($char_dizi as $char) {
+    echo "$char\n";
+}
+print_r($char_dizi);
+?>
 
+Soru 7) 
 
