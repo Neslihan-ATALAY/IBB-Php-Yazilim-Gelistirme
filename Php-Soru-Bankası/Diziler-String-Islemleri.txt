@@ -1,0 +1,45 @@
+Soru 1) ["PHP", "HTML", "CSS"] dizisindeki elemanları foreach ile alt alta yazdırınız.
+
+Çözüm 1)
+<?php
+$dizi = ["PHP", "HTML", "CSS"];
+foreach ($dizi as $eleman) {
+    print "$eleman\n";
+}
+?>
+
+Soru 2) Aşağıdaki dizideki değerlerin toplamını foreach ile bulunuz.
+$sayilar = [3, 5, 7, 2];
+
+Çözüm 2)
+<?php
+$toplam = 0;
+$dizi = "";
+$sayilar = [3, 5, 7, 2];
+foreach ($sayilar as $sayi) {
+    $toplam += $sayi;
+}
+for ($i = 0; $i < count($sayilar); $i++) {
+    if ($i == 0)
+        $dizi = $dizi.$sayilar[0];
+    else
+        $dizi = $dizi."+".$sayilar[$i];
+}
+echo $dizi."=".$toplam;
+?>
+
+Soru 3) İsimlerden oluşan bir diziyi alfabetik olarak sıralayan ve ekrana yazdıran bir kod yazınız.
+
+Çözüm 3)
+<?php
+$isimler = ["Neslihan", "Neslişah", "Neslinur", "Neslican", "Nesligül"];
+echo "Dizideki isimler:\n";
+print_r($isimler);
+sort($isimler);
+echo "Dizideki isimleri alfabetik sıralama:\n";
+foreach ($isimler as $isim) {
+    echo "$isim\n";
+}
+?>
+
+Soru 4) 
