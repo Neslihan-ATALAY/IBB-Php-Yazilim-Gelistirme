@@ -81,5 +81,32 @@ foreach ($char_dizi as $char) {
 print_r($char_dizi);
 ?>
 
-Soru 7) 
+Soru 7) explode() kullanarak bir cümleyi kelimelere bölüp her kelimeyi alt alta yazdırınız.
+
+Çözüm 7)
+<?php
+$cumle = "Bu yoğurdu sarımsaklasak da mı saklasak sarımsaklamasak da mı saklasak.";
+$kelime_dizi = explode(" ", $cumle);
+echo "$cumle\n";
+foreach ($kelime_dizi as $kelime) {
+    echo "$kelime\n";
+}
+print_r($kelime_dizi);
+?>
+
+Soru 8) str_replace() ile cümle içindeki bir kelimeyi başka bir kelime ile değiştiriniz.
+
+Çözüm 8)
+<?php
+$cumle = "Bu yoğurdu sarımsaklasak da mı saklasak sarımsaklamasak da mı saklasak.";
+echo "$cumle\n";
+$degismis_cumle = str_replace("sarımsak", "tuz", $cumle);
+echo "$degismis_cumle\n";
+?>
+
+Soru 9) strlen() ve strpos() fonksiyonlarını kullanarak bir cümlenin ilk boşluk pozisyonunu ve uzunluğunu bulan bir kod yazınız.
+
+Çözüm 9)
+
+
 
