@@ -42,4 +42,17 @@ foreach ($isimler as $isim) {
 }
 ?>
 
-Soru 4) 
+Soru 4) in_array() fonksiyonunu kullanarak bir ismin dizide olup olmadığını kontrol eden bir örnek yazınız.
+
+Çözüm 4)
+<?php
+$isimler = ["Neslihan", "Neslişah", "Neslinur", "Neslican", "Nesligül"];
+$isim = readline("İsimler dizisinde aradığınız ismi yazınız (büyük küçük harf duyarlı): ");
+echo "$isim ismi dizide var mı?\n";
+if (in_array($isim, $isimler))
+    echo "$isim ismi dizide var.\n";
+else
+    echo "$isim ismi dizide yok.\n";
+?>
+
+Soru 5)
