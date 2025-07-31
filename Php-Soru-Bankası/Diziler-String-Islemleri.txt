@@ -107,6 +107,25 @@ echo "$degismis_cumle\n";
 Soru 9) strlen() ve strpos() fonksiyonlarını kullanarak bir cümlenin ilk boşluk pozisyonunu ve uzunluğunu bulan bir kod yazınız.
 
 Çözüm 9)
+<?php
+$cumle = "Lorem     ipsum dolor sit amet, consectetur adipiscing elit.";
+$harf = " "; $bosluk = "";
+echo "$cumle\n";
+$indis = 0; $uzunluk = 0;
+$indis = strpos($cumle, $harf);
+$sub_cumle = substr($cumle, $indis);
+$split_cumle = str_split($sub_cumle);
+for ($i = 0; $i < count($split_cumle); $i++) {
+    if ($split_cumle[$i] == $harf) {
+        $bosluk = $bosluk.$harf;
+    } else {
+        break;
+    }
+}
+$uzunluk = strlen($bosluk);
+echo "İlk boşluk pozisyon: $indis\n";
+echo "İlk boşluk uzunluk: $uzunluk\n";
+?>
 
 Soru 10) Bir metindeki sesli harfleri sayan bir döngü yazınız.
 
