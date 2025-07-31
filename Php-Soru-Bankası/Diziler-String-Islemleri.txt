@@ -111,5 +111,17 @@ Soru 9) strlen() ve strpos() fonksiyonlarını kullanarak bir cümlenin ilk boş
 Soru 10) Bir metindeki sesli harfleri sayan bir döngü yazınız.
 
 Çözüm 10)
-
-
+<?php
+$cumle = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
+$sayi = 0; $harf = " "; $sesli = " ";
+$sesliler = ["a","e","ı","i","o","ö","u","ü"];
+$cumle_dizi = str_split($cumle);
+foreach($cumle_dizi as $harf) {
+    foreach($sesliler as $sesli) {
+        if ($harf === $sesli) {
+            $sayi++;
+        }
+    }
+}
+echo "$cumle cümlesindeki sesli harf sayısı: $sayi";
+?>
