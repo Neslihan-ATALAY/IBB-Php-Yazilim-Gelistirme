@@ -75,4 +75,25 @@ for ($i = 1; $i <= 10; $i++) {
 }
 ?>
 
-Soru 6)
+Soru 6) Kullanıcıdan alınan bir kelimenin tersten yazımını bulan bir döngü yazınız.
+
+Çözüm 6)
+<?php
+$kelime = readline("Tersten yazılacak bir kelime yazınız: ");
+$kelimenin_tersi = "";
+$dizi = str_split($kelime);
+$ters_dizi = [];
+$j=0;
+for ($i = count($dizi)-1; $i >= 0; $i--) {
+    $ters_dizi[$j++] = $dizi[$i];
+}
+for ($i = 0; $i < count($ters_dizi); $i++) {
+    $kelimenin_tersi = $kelimenin_tersi.$ters_dizi[$i];
+}
+echo "$kelime kelimesinin tersten yazımı: $kelimenin_tersi";
+?>
+
+Soru 7) 1'den 10'a kadar olan sayıların kareköklerini hesaplayan bir for döngüsü yazınız.
+
+Çözüm 7)
+
