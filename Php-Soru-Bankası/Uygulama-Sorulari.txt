@@ -105,7 +105,7 @@ for ($i = 1; $i <= 10; $i++) {
 }
 ?>
 
-Soru 8)
+Soru 8) 
 
 Çözüm 8)
 <?php
@@ -128,4 +128,33 @@ if ($sayi == $toplam) {
 }
 ?>
 
+Soru 9) 10 elemanlı bir dizideki pozitif ve negatif sayıları ayrı ayrı listeleyen bir döngü yazınız.
 
+Çözüm 9)
+<?php
+$dizi = [10, -10, 20, -25, 8, -4, 55, -34, 98, -78];
+$pozitifler = [];
+$negatifler = [];
+$p = 0; $n = 0;
+for ($i = 0; $i < count($dizi); $i++) {
+    if ($dizi[$i] < 0) {
+        $negatifler[$n++] = $dizi[$i];
+    } else if ($dizi[$i] >= 0) {
+        $pozitifler[$p++] = $dizi[$i];
+    }
+}
+echo "Dizideki pozitif sayılar:\n";
+print_r($pozitifler);
+echo "Dizideki negatif sayılar:\n";
+print_r($negatifler);
+?>
+
+Soru 10) Kullanıcıdan alınan bir cümlede kaç kelime olduğunu sayan bir kod yazınız.
+
+Çözüm 10)
+<?php
+$cumle = readline("Kelime sayısı için bir cümle yazınız:\n");
+$dizi = explode(" ", $cumle);
+$kelime_sayisi = count($dizi);
+echo "$cumle cümlesindeki kelime sayısı: $kelime_sayisi\n";
+?>
