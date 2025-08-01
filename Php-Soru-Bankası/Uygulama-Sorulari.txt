@@ -21,3 +21,58 @@ for ($i = 1; $i <= $n; $i++) {
 echo "$n sayısının faktöriyeli $n!=$faktoriyel\n";
 ?>
 
+Soru 3) 10 elemanlı rastgele sayılardan oluşan bir dizi oluşturun ve bu dizideki en büyük ve en küçük sayıyı bulan bir kod yazınız.
+
+<?php
+$dizi = [];
+$max = 0; $min = 0;
+for ($i = 1; $i <= 10; $i++) {
+    $dizi[$i] = rand();
+}
+print_r($dizi);
+for ($i = 1; $i <= count($dizi); $i++) {
+    if ($dizi[$i] > $max) {
+        $max = $dizi[$i];
+    }
+}
+$min = $max;
+for ($i = 1; $i <= count($dizi); $i++) {
+    if ($dizi[$i] < $min) {
+        $min = $dizi[$i];
+    }
+}
+echo "En büyük sayı:$max, En küçük sayı:$min";
+?>
+
+Soru 4) Kullanıcıdan alınan bir sayının asal olup olmadığını kontrol eden bir kod yazınız.
+
+Çözüm 4)
+<?php
+$n = readline("Asal sayı için bir sayı yazınız: ");
+$asal = true;
+for ($i = 2; $i < $n; $i++) {
+    if (($i != 2) & ($n % $i == 0)) {
+        $asal = false;
+        break;
+    }
+}
+if ($asal == true) {
+    echo "$n sayısı asal sayıdır.";
+} else {
+    echo "$n sayısı asal sayı değildir.";
+}
+?>
+
+Soru 5) 1'den 10'a kadar olan sayıların karelerini tablo şeklinde yazdıran bir for döngüsü yazınız.
+
+Çözüm 5)
+<?php
+echo "1'den 10'a sayılar ve sayıların kareleri\n";
+$karesi = true;
+for ($i = 1; $i <= 10; $i++) {
+    $karesi = $i * $i;
+    echo "$i\t\t$karesi\n";
+}
+?>
+
+Soru 6)
