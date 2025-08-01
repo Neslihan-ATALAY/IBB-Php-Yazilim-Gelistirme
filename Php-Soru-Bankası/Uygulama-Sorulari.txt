@@ -1,0 +1,23 @@
+Soru 1) 1'den 100'e kadar olan sayılardan hem 3'e hem de 5'e tam bölünenleri ekrana yazdıran bir döngü yazınız.
+
+Çözüm 1)
+<?php
+for ($i = 1; $i <= 100; $i++) {
+    if ($i % 3 == 0 & $i % 5 == 0) {
+        echo "$i\n";
+    }
+}
+?>
+
+Soru 2) Kullanıcıdan alınan bir sayının faktöriyelini hesaplayan bir for döngüsü yazınız.
+
+Çözüm 2)
+<?php
+$n = readline("Faktöriyel için bir sayı yazınız: ");
+$faktoriyel = 1;
+for ($i = 1; $i <= $n; $i++) {
+    $faktoriyel = $faktoriyel*$i; 
+}
+echo "$n sayısının faktöriyeli $n!=$faktoriyel\n";
+?>
+
