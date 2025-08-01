@@ -96,4 +96,12 @@ echo "$kelime kelimesinin tersten yazımı: $kelimenin_tersi";
 Soru 7) 1'den 10'a kadar olan sayıların kareköklerini hesaplayan bir for döngüsü yazınız.
 
 Çözüm 7)
+<?php
+echo "1'den 10'a sayıların karekökleri\n";
+$sqrt = "";
+for ($i = 1; $i <= 10; $i++) {
+    $sqrt = sqrt($i);
+    echo "$i\t\t$sqrt\n";
+}
+?>
 
