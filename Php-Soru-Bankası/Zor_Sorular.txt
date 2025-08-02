@@ -168,3 +168,52 @@ echo "\n$yeni_cumle\n";
 Soru 10) Kullanıcıdan alınan bir cümledeki kelimeleri tersten yazan bir döngü yazınız.
 
 Çözüm 10)
+Kelimelerin tersten (sondan başa) yazılması:
+<?php
+$cumle = readline("Bir cümle yazınız: ");
+$dizi = explode(" ", $cumle);
+$boyut = count($dizi);
+$yeni_cumle = $dizi[$boyut-1];
+for ($i = $boyut-2; $i >= 0; $i--) {
+    $yeni_cumle = $yeni_cumle." ".$dizi[$i];
+}
+echo "\n$yeni_cumle\n";
+?>
+
+Kelimelerin harflerinin tersten yazılması:
+<?php
+$cumle = readline("Kelimelerinin tersten yazılması için bir cümle yazınız: ");
+$dizi = explode(" ", $cumle);
+$yeni_cumle = "";
+$n = 0;
+while ($n < count($dizi)) {
+    $kelime_dizi  = str_split($dizi[$n++]);
+    if ($n != 0) {
+        $yeni_cumle = $yeni_cumle." ";
+    }
+    for ($i = count($kelime_dizi)-1; $i >= 0; $i--) {
+        $yeni_cumle = $yeni_cumle.$kelime_dizi[$i];
+    }
+}
+echo "\n$yeni_cumle\n";
+?>
+
+Hem kelimelerin hem de kelimelerin harflerinin tersten yazılması:
+<?php
+$cumle = readline("Bir cümle yazınız: ");
+$dizi = explode(" ", $cumle);
+$boyut = count($dizi);
+$yeni_cumle = "";
+$n = $boyut-1;
+while ($n >= 0) {
+    if ($n != $boyut - 1) {
+        $yeni_cumle = $yeni_cumle." ";
+    }
+    $kelime_dizi = str_split($dizi[$n--]);
+    for ($i = count($kelime_dizi)-1; $i >= 0; $i--) {
+    $yeni_cumle = $yeni_cumle.$kelime_dizi[$i];
+}
+}
+echo "\n$yeni_cumle\n";
+?>
+
