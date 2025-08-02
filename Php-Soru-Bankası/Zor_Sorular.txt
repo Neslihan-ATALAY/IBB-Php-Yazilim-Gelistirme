@@ -54,4 +54,23 @@ if ($sayi == $toplam) {
 }
 ?>
 
+Soru 4) Kullanıcıdan alınan bir tamsayıyı ikili sisteme (binary) çeviren bir döngü yazınız.
 
+Çözüm 4)
+<?php
+$sayi = readline(" İkili sayı sistemine çevrilecek bir tamsayı yazınız: \n");
+$dizi = [];
+$i = 0;
+$sayi2 = $sayi;
+while ($sayi2 / 2 > 0) {
+    $dizi[$i++] = $sayi2 % 2;
+    $sayi2 = floor($sayi2 / 2);
+}
+$ikili_sayi = "";
+for ($i = count($dizi)-1; $i >= 0; $i--) {
+    $ikili_sayi = $ikili_sayi.$dizi[$i];
+}
+echo "$sayi sayısının ikili (binary) sisteme çevrilmiş sayısı: $ikili_sayi";
+?>
+
+Soru 5) 
