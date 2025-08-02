@@ -73,4 +73,27 @@ for ($i = count($dizi)-1; $i >= 0; $i--) {
 echo "$sayi sayısının ikili (binary) sisteme çevrilmiş sayısı: $ikili_sayi";
 ?>
 
-Soru 5) 
+Soru 5) Kullanıcıdan alınan bir sayının palindrom olup olmadığını kontrol eden bir döngü yazınız. (Palindrom: 121 gibi tersyen okunduğunda aynı olan sayılar)
+
+Çözüm 5)
+<?php
+$sayi = readline("Palindrom için bir sayı yazınız: \n");
+$dizi = [];
+$i = 0;
+$sayi2 = $sayi;
+while ($sayi2 / 10 > 0) {
+    $dizi[$i++] = $sayi2 % 10;
+    $sayi2 = floor($sayi2 / 10);
+}
+$tersten = "";
+for ($i = 0; $i < count($dizi); $i++) {
+    $tersten = $tersten.$dizi[$i];
+}
+if ($sayi == $tersten) {
+    echo "$sayi sayısı palindromdur.";
+} else {
+    echo "$sayi sayısı palindrom değildir.";
+}
+?>
+
+
