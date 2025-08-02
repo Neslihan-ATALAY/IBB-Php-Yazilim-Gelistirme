@@ -139,7 +139,17 @@ echo "EBOB($sayi1, $sayi2) = $ebob";
 Soru 8) Kullanıcıdan alınan bir sayının tam bölenlerini bulan bir döngü yazınız.
 
 Çözüm 8)
-
+<?php
+$sayi = readline("Tam bölenleri için bir sayı yazınız: ");
+$adet = 0;
+for ($i = 1; $i <= $sayi; $i++) {
+    if ($sayi % $i == 0) {
+        echo "-$i, $i, ";
+        $adet = $adet + 2;
+    }
+}
+echo "\n$sayi sayısının tam bölenleri $adet tanedir.\n";
+?>
 
 Soru 9) Kullanıcıdan alınan bir cümledeki her kelimenin baş harfini büyük yapan bir kod yazınız. (ucwords() olmadan)
 
