@@ -23,6 +23,7 @@ echo "$n sayısının faktöriyeli $n!=$faktoriyel\n";
 
 Soru 3) 10 elemanlı rastgele sayılardan oluşan bir dizi oluşturun ve bu dizideki en büyük ve en küçük sayıyı bulan bir kod yazınız.
 
+Çözüm 3)
 <?php
 $dizi = [];
 $max = 0; $min = 0;
@@ -105,7 +106,9 @@ for ($i = 1; $i <= 10; $i++) {
 }
 ?>
 
-Soru 8) 
+Soru 8) Kullanıcıdan alınan bir sayının mükemmel sayı olup olmadığını kontrol eden bir döngü yazınız.
+
+Mükemmel sayı: kendisi hariç pozitif bölenlerinin toplamı kendisine eşit olan sayı)
 
 Çözüm 8)
 <?php
