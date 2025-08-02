@@ -113,4 +113,31 @@ for ($i = 1; $i <= 100; $i++) {
 Soru 7) Kullanıcıdan alınan iki sayının EBOB'unu bulan bir döngü yazınız.
 
 Çözüm 7)
+<?php
+$sayi1 = readline("EBOB için ilk sayıyı yazınız: ");
+$sayi2 = readline("EBOB için ikinci sayıyı yazınız: ");
+$dizi = [];
+$j = 0;
+$s1 = $sayi1;
+$s2 = $sayi2;
+for ($i = 2; $i < min($sayi1, $sayi2); $i++) {
+    while ($s1 % $i == 0 & $s2 % $i == 0) {
+        $s1 = $s1 / $i;
+        $s2 = $s2 / $i;
+        $dizi[$j++] = $i;
+    }
+}
+$ebob = 1;
+if (count($dizi) > 0) {
+    for ($i = 0; $i < count($dizi); $i++) {
+        $ebob *= $dizi[$i];
+    }
+}
+echo "EBOB($sayi1, $sayi2) = $ebob";
+?>
+
+Soru 8) Kullanıcıdan alınan bir sayının yam bölenlerini bulan bir döngü yazınız.
+
+Çözüm 8)
+
 
