@@ -96,4 +96,21 @@ if ($sayi == $tersten) {
 }
 ?>
 
+Soru 6) 1'den 100'e kadar olan sayılar yazarken tek olanları mavi, çift olanları kırmızı renkte ekrana yazdıran bir döngü yazınız. (HTML çıktı üretilebilir)
+
+Çözüm 6)
+<?php
+echo "1'den 100'e tek ve çift sayılar\n";
+for ($i = 1; $i <= 100; $i++) {
+    if ($i % 2 == 0) {
+        echo '<p style="background-color:red;">$i</p>';
+    } else {
+        echo '<p style="background-color:blue;">$i</p>';
+    }
+}
+?>
+
+Soru 7) Kullanıcıdan alınan iki sayının EBOB'unu bulan bir döngü yazınız.
+
+Çözüm 7)
 
