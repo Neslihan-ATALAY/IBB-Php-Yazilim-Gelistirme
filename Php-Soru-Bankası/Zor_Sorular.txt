@@ -136,8 +136,15 @@ if (count($dizi) > 0) {
 echo "EBOB($sayi1, $sayi2) = $ebob";
 ?>
 
-Soru 8) Kullanıcıdan alınan bir sayının yam bölenlerini bulan bir döngü yazınız.
+Soru 8) Kullanıcıdan alınan bir sayının tam bölenlerini bulan bir döngü yazınız.
 
 Çözüm 8)
 
 
+Soru 9) Kullanıcıdan alınan bir cümledeki her kelimenin baş harfini büyük yapan bir kod yazınız. (ucwords() olmadan)
+
+Çözüm 9)
+
+Soru 10) Kullanıcıdan alınan bir cümledeki kelimeleri tersten yazan bir döngü yazınız.
+
+Çözüm 10)
