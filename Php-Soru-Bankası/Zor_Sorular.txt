@@ -154,6 +154,16 @@ echo "\n$sayi sayısının tam bölenleri $adet tanedir.\n";
 Soru 9) Kullanıcıdan alınan bir cümledeki her kelimenin baş harfini büyük yapan bir kod yazınız. (ucwords() olmadan)
 
 Çözüm 9)
+<?php
+$cumle = readline("Kelimelerinin ilk harfleri büyük harf olarak yeniden oluşturulacak bir cümle yazınız: ");
+$dizi = explode(" ", $cumle);
+$yeni_cumle = strtoupper(substr($dizi[0], 0, 1)).(substr($dizi[0], 1));
+for ($i = 1; $i < count($dizi); $i++) {
+    $yeni_cumle = $yeni_cumle." ".strtoupper(substr($dizi[$i], 0, 1)).(substr($dizi[$i], 1));
+    
+}
+echo "\n$yeni_cumle\n";
+?>
 
 Soru 10) Kullanıcıdan alınan bir cümledeki kelimeleri tersten yazan bir döngü yazınız.
 
