@@ -211,8 +211,8 @@ while ($n >= 0) {
     }
     $kelime_dizi = str_split($dizi[$n--]);
     for ($i = count($kelime_dizi)-1; $i >= 0; $i--) {
-    $yeni_cumle = $yeni_cumle.$kelime_dizi[$i];
-}
+        $yeni_cumle = $yeni_cumle.$kelime_dizi[$i];
+    }
 }
 echo "\n$yeni_cumle\n";
 ?>
