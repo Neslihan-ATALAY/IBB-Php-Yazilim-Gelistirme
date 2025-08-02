@@ -1,0 +1,21 @@
+Soru 1) 1'den 100'e kadar olan sayıları yazdırırken 3'e bölünenleri "Fizz", 5'e bölünenleri "Buzz", ikisine birden bölünenleri "FizzBuzz" yazan bir for döngüsü yazınız.
+
+Çözüm 1)
+<?php
+for ($i = 1; $i <= 100; $i++) {
+    if (($i % 3 == 0) & ($i % 5 == 0)) {
+        echo "FizzBuzz";
+    } else if ($i % 3 == 0) {
+        echo "Fizz";
+    } else if ($i % 5 == 0) {
+        echo "Buzz";
+    } else {
+        echo "$i";
+    }
+}
+?>
+
+Soru 2) Fibonacci serisinin ilk 15 terimini yazdıran bir döngü yazınız.
+
+Çözüm 2)
+
